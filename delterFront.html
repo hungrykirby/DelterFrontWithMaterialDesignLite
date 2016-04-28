@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial=1.0">
+  <title>Delter</title>
+  <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.18.1/build/cssreset/cssreset-min.css">
+  <script type="text/javascript" src="plugins/jquery-2.1.4.min.js"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://code.getmdl.io/1.1.3/material.light_blue-light_green.min.css">
+  <script defer src="https://code.getmdl.io/1.1.3/material.min.js"></script>
+
+  <link rel="stylesheet" href="css/main.css">
+
+  <script type="text/javascript" src="js/overlay.js"></script>
+  <script type="text/javascript" src="js/windowResized.js"></script>
+</head>
+
+<body>
+  <div id="wrapper">
+    <div id="loading">
+      <div id="loadingCircle" class="mdl-spinner mdl-spinner--single-color mdl-js-spinner is-active"></div>
+    </div>
+    <div class="demo-layout">
+      <div class="mdl-layout mdl-js-layout mdl-layout--fixed-drawer
+                  mdl-layout--fixed-header">
+        <header class="mdl-layout__header">
+          <div class="mdl-layout__header-row">
+            <div class="mdl-layout-spacer"></div>
+            <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable
+                        mdl-textfield--floating-label mdl-textfield--align-right">
+              <div class="mdl-textfield__expandable-holder">
+                <input class="mdl-textfield__input" type="text" name="sample"
+                       id="fixed-header-drawer-exp" />
+              </div>
+            </div>
+          </div>
+        </header>
+        <div class="mdl-layout__drawer" id="popup">
+          <span class="mdl-layout-title">メニュー</span>
+          <nav class="mdl-navigation">
+            <button type="button" id="facebook"
+                    class="mainBtn mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
+              <img src="images/facebook.png"><p>ログイン</p>
+            </button>
+            <button type="button" id="hatena"
+                    class="mainBtn mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
+              <img src="images/hatena.svg"><p>ログイン</p>
+            </button>
+            <button type="button" id="twitter"
+                    class="mainBtn mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
+              <img src="images/twitter.png"><p>ログイン</p>
+            </button>
+            <br>
+            <br>
+            <p id="sliderTag">フォローユーザーからの情報</p>
+            <input class="mdl-slider mdl-js-slider" type="range"  min="0" max="100" value="0" tabindex="0"/>
+            <p id="sliderTag">トレンドからの情報</p>
+            <input class="mdl-slider mdl-js-slider" type="range"  min="0" max="100" value="0" tabindex="0"/>
+            <p id="sliderTag">興味あるカテゴリからの情報</p>
+            <input class="mdl-slider mdl-js-slider" type="range"  min="0" max="100" value="0" tabindex="0"/>
+          </nav>
+        </div>
+        <main class="mdl-layout__content">
+          <div class="page-content"><!-- Your content goes here --></div>
+        </main>
+      </div>
+    </div>
+  </body>
+</div>
+</html>
