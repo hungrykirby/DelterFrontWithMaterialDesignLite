@@ -26,10 +26,12 @@ body {
   transform: translateX(-250px);
 }
 
-nav{
+.textfield{
+  margin: auto;
 }
 
 #loading{
+  display: none;
   position: absolute;
   width: 100px;
   height: 100px;
@@ -54,13 +56,23 @@ nav{
   margin-top: 5px;
 }
 
-img{
-  height: 48px;
+#twitter{
+  background: none;
+  border: none;
 }
 
-button{
-  /*border: none;
-  background: none;*/
+#welcome_card{
+  background: #fff;
+  height: 176px;
+  margin-top: 10px;
+}
+
+/*.page-content{
+  margin:20px auto;
+}*/
+
+img{
+  height: 48px;
 }
 
 /*for PC*/
@@ -70,4 +82,20 @@ button{
     -webkit-transform: translateX(-370px);
     transform: translateX(-370px);
   }
+
+  /*.mdl-layout__header{
+    margin-left:360px;
+    width:calc(100% - 360px);
+  }*/
+}
+
+@media all and (min-width: 1025px){
+  .page-content{
+    -webkit-transform: translateX(120px);
+    transform: translateX(120px);
+  }
+  /*.mdl-card{
+      width: calc(100% - 360px);
+      height: 176px;
+  }*/
 }
