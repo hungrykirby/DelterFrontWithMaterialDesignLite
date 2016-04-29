@@ -51,6 +51,10 @@ body {
   margin-bottom: 0;
 }
 
+button img{
+  height: 48px;
+}
+
 .mainBtn{
   height: 48px;
   margin-top: 5px;
@@ -61,18 +65,38 @@ body {
   border: none;
 }
 
+.demo-card-wide.mdl-card {
+  width: 100%;
+  margin:0px auto;
+  background: none;
+}
+
 #welcome_card{
+  width: 95%;
   background: #fff;
-  height: 176px;
-  margin-top: 10px;
+  height: 100px;
+  margin: 3px auto;
+  padding: 0px;
+  border: 1px #000 solid;
 }
 
 /*.page-content{
-  margin:20px auto;
+  width: 90%;
+  clear: left;
+  text-align: center;
 }*/
 
-img{
-  height: 48px;
+#tweets{
+  width: 95%;
+  background: #fff;
+  height: 176px;
+  margin: 3px auto 0px;
+  border: 1px #000 solid;
+  padding: 0px;
+}
+
+#icon{
+  height: 72px;
 }
 
 /*for PC*/
@@ -91,8 +115,9 @@ img{
 
 @media all and (min-width: 1025px){
   .page-content{
-    -webkit-transform: translateX(120px);
-    transform: translateX(120px);
+    -webkit-transform: translateX(360px);
+    transform: translateX(360px);
+    width: calc(90*(100% - 360px))
   }
   /*.mdl-card{
       width: calc(100% - 360px);
