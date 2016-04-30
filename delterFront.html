@@ -12,8 +12,7 @@
 
   <link rel="stylesheet" href="css/main.css">
 
-  <script type="text/javascript" src="js/overlay.js"></script>
-  <script type="text/javascript" src="js/windowResized.js"></script>
+  <script type="text/javascript" src="js/dataIn.js"></script>
 </head>
 
 <body>
@@ -48,22 +47,26 @@
                     class="mainBtn mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
               <img src="images/twitter.png"><p>ログイン</p>
             </button> -->
-              <button type="button" id="twitter"
-                      class="mainBtn">
-                <img src="images/twitter.png">
-              </button>
+              <form action="/api/auth/twitter" method="get">
+                <button type="button" id="twitter"
+                        class="mainBtn">
+                  <img src="images/twitter.png">
+                </button>
+              </form>
               <br>
               <br>
-              <p id="sliderTag">フォローユーザーからの情報</p>
-              <input class="mdl-slider mdl-js-slider" type="range"  min="0" max="100" value="0" tabindex="0"/>
-              <p id="sliderTag">トレンドからの情報</p>
-              <input class="mdl-slider mdl-js-slider" type="range"  min="0" max="100" value="0" tabindex="0"/>
-              <p id="sliderTag">興味あるカテゴリからの情報</p>
-              <input class="mdl-slider mdl-js-slider" type="range"  min="0" max="100" value="0" tabindex="0"/>
-              <div class="mdl-textfield mdl-js-textfield textfield">
-                <input class="mdl-textfield__input" type="text" id="sample1" />
-                <label class="mdl-textfield__label" for="sample1">興味のあるカテゴリ</label>
-              </div>
+              <form action="#" method="POST">
+                <p id="sliderTag">フォローユーザーからの情報</p>
+                <input class="mdl-slider mdl-js-slider" type="range"  min="0" max="10" value="5" tabindex="0"/>
+                <p id="sliderTag">トレンドからの情報</p>
+                <input class="mdl-slider mdl-js-slider" type="range"  min="0" max="10" value="5" tabindex="0"/>
+                <p id="sliderTag">興味あるカテゴリからの情報</p>
+                <input class="mdl-slider mdl-js-slider" type="range"  min="0" max="10" value="5" tabindex="0"/>
+                <div class="mdl-textfield mdl-js-textfield textfield">
+                  <input class="mdl-textfield__input" type="text" id="sample1" />
+                  <label class="mdl-textfield__label" for="sample1">興味のあるカテゴリ</label>
+                </div>
+              </form>
             </nav>
           </div>
           <!-- <main class="mdl-layout__content mdl-shadow--2dp"> -->
@@ -71,7 +74,7 @@
             <div class="page-content">
               <div class="mdl-shadow--2dp " id="welcome_card">
                 <h2>Welcome to Delter!</h2>
-                <h6>メニューからアカウントにログインしてください</h6>
+                <h5>メニューからアカウントにログインしてください</h5>
                 <!-- <div class="mdl-card__title">
                   <h2 class="mdl-card__title-text">Welcome to Delter!</h2>
                 </div>
@@ -83,6 +86,7 @@
               <div class="mdl-shadow--2dp" id="tweets">
                 <img id="icon" alt="icon image"
                 src="https://pbs.twimg.com/profile_images/717259359814754304/0Sb2mpYV.jpg">
+                <p class="username">ツタンラーメン</p>
                 <h6>ああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああ</h6>
 
               </div>
