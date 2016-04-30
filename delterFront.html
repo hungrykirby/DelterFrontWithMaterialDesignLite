@@ -6,6 +6,7 @@
   <title>Delter</title>
   <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.18.1/build/cssreset/cssreset-min.css">
   <script type="text/javascript" src="plugins/jquery-2.1.4.min.js"></script>
+  <script type="text/javascript" src=plugins/jquery.xdomainajax.js></script>
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <link rel="stylesheet" href="https://code.getmdl.io/1.1.3/material.light_blue-light_green.min.css">
   <script defer src="https://code.getmdl.io/1.1.3/material.min.js"></script>
@@ -13,6 +14,7 @@
   <link rel="stylesheet" href="css/main.css">
 
   <script type="text/javascript" src="js/dataIn.js"></script>
+  <script type="text/javascript" src="js/twitterLogin.js"></script>
 </head>
 
 <body>
@@ -47,12 +49,12 @@
                     class="mainBtn mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
               <img src="images/twitter.png"><p>ログイン</p>
             </button> -->
-              <form action="/api/auth/twitter" method="get">
+              <!-- <form action="#" method="get"> -->
                 <button type="button" id="twitter"
                         class="mainBtn">
                   <img src="images/twitter.png">
                 </button>
-              </form>
+              <!-- </form> -->
               <br>
               <br>
               <form action="#" method="POST">
@@ -83,18 +85,20 @@
                   メニューからアカウントにログインしてください
                 </div> -->
               </div>
-              <div class="mdl-shadow--2dp" id="tweets">
+              <div class="mdl-shadow--2dp tweets">
                 <img id="icon" alt="icon image"
                 src="https://pbs.twimg.com/profile_images/717259359814754304/0Sb2mpYV.jpg">
                 <p class="username">ツタンラーメン</p>
-                <h6>ああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああ</h6>
+                <h6>tech lab paakまじ快適杉ワロタwwwwwwwwwwwwwwww</h6>
 
               </div>
 
-              <div class="mdl-shadow--2dp" id="tweets">
+              <div class="mdl-shadow--2dp tweets">
                 <img id="icon" alt="icon image"
                 src="https://pbs.twimg.com/profile_images/717259359814754304/0Sb2mpYV.jpg">
-                <h6>ああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああ</h6>
+                <p class="username">ハム太郎</p>
+                <h6>新しく牛肉の天然水が出るらしい。</h6>
+                <h6>https://www.google.co.jp/search?q=%E7%89%9B%E8%82%89%E3%81%AE%E5%A4%A9%E7%84%B6%E6%B0%B4&ie=utf-8&oe=utf-8&hl=ja</h6>
 
               </div>
             </div>

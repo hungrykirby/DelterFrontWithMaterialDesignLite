@@ -31,7 +31,7 @@ body {
 }
 
 #loading{
-  /*display: none;*/
+  display: none;
   position: fixed;
   top: 0;
 	right: -50px;
@@ -87,7 +87,8 @@ button img{
   text-align: center;
 }*/
 
-#tweets{
+.tweets{
+  display: none;
   width: 95%;
   min-width: 300px;
   background: #fff;
